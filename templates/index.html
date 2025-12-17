@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Photo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin-top: 300px; /* Added margin-top to create space */
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 14px;
+            color: #555555;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: blue;">Welcome to Advanced NoteCam Watermarks</h1>
+        <h1>Upload Photo</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="photo">Photo:</label>
+                <input type="file" name="photo" id="photo" required>
+            </div>
+            <div class="form-group">
+                <label for="text1">Latitude:</label>
+                <input type="text" name="text1" id="text1" placeholder="Enter Latitude" required>
+            </div>
+            <div class="form-group">
+                <label for="text2">Longitude:</label>
+                <input type="text" name="text2" id="text2" placeholder="Enter Longitude" required>
+            </div>
+            <div class="form-group">
+                <label for="text3">Elevation:</label>
+                <input type="text" name="text3" id="text3" placeholder="Enter Elevation" required>
+            </div>
+            <div class="form-group">
+                <label for="text4">Accuracy:</label>
+                <input type="text" name="text4" id="text4" placeholder="Enter Accuracy" required>
+            </div>
+            <div class="form-group">
+                <label for="text5">Time:</label>
+                <input type="text" name="text5" id="text5" placeholder="Enter Time" required>
+            </div>
+            <div class="form-group">
+                <label for="text6">Note 1:</label>
+                <input type="text" name="text6" id="text6" placeholder="Enter Note 1" required>
+            </div>
+            <div class="form-group">
+                <label for="text7">Note 2:</label>
+                <input type="text" name="text7" id="text7" placeholder="Enter Note 2" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
